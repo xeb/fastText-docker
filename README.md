@@ -19,8 +19,8 @@ For example, to run ```classification-example.sh```, use the following command:
 docker run -it fasttext ./classification-example.sh
 ```
 
-If you have a local file, you can mount a docker volume or copy it into a running container.  See the [example.sh](example.sh) for the *classification-example* using only Docker containers for execution.
-  
+If you have a local file, you can mount a docker volume or copy it into a running container.  See the [classification-docker-example.sh](classification-docker-example.sh) for the *classification-example* using only Docker containers for execution.
+
 ```
 ./example.sh
 ```
