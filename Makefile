@@ -8,6 +8,9 @@ clean:
 	rm -rf data
 	rm -rf result
 
+pull:
+	docker pull $(DOCKER_IMAGE_PREFIX)
+
 build:
 	docker build -t $(DOCKER_IMAGE_PREFIX) -f Dockerfile .
 
