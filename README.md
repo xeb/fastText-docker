@@ -1,4 +1,4 @@
-# fastText Docker
+# fastText Docker [![Build Status](https://travis-ci.org/xeb/fastText-docker.svg?branch=master)](https://travis-ci.org/xeb/fastText-docker)
 Dockerfile and example for Facebook Research's [fastText](https://github.com/facebookresearch/fastText).
 
 # Getting Started
