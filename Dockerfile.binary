@@ -1,0 +1,7 @@
+# See Makefile for how to build with this Dockerfile
+FROM ubuntu:14.04
+MAINTAINER Mark Kockerbeck <mark@kockerbeck.com>
+ADD fasttext.bin /fasttext
+WORKDIR /
+ENTRYPOINT ["./fasttext"]
+CMD ["help"]

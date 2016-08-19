@@ -1,2 +1,3 @@
-data/*
-result/*
+**data/*
+**result/*
+fasttext.bin
