@@ -1,15 +1,25 @@
 # fastText Docker
 Dockerfile and example for Facebook Research's [fastText](https://github.com/facebookresearch/fastText).
 
+# Getting Started
+The quickest way to see the fastText classification tutorial with fastText-docker is:
+```
+docker pull xebxeb/fasttext-docker
+mkdir -p /tmp/data && mkdir -p /tmp/result
+docker run --rm -v /tmp/data:/data -v /tmp/result:/result -it xebxeb/fasttext-docker ./classification-example.sh
+```
+
+**NOTE**: if you ran the above on macOS, the data & results are going to be on your Docker Machine VM.  Use a path in ```/Users/${USER}/``` if you want to map to your local system.  Or do something like: ```docker-machine ssh `docker-machine active` ls /tmp/data``` to see the files in your VM.
+
 # Types of Dockerfiles
 There are two Dockerfiles, including:
-- *Dockerfile* all-in-one, used for development purposes.  Includes the fastText binary, the entire source repository and Python dependencies.
-- *Dockerfile.binary* just for executing the fastText binary.  The fasttext binary is the container's entrypoint.
+- **Dockerfile** all-in-one, used for development purposes.  Includes the fastText binary, the entire source repository and Python dependencies.
+- **Dockerfile.binary** just for executing the fastText binary.  The fasttext binary is the container's entrypoint.
 
 # Pulling Prebuilt Images
 If you'd like to use the published prebuilt images, you can pull them from DockerHub.  *NOTE*: the _latest_ will always be the *devel* tag.
 ```
-docker pull xebxeb/fasttext-docker
+docker pull xebxeb/fasttext-docker# <-- latest is devel
 docker pull xebxeb/fasttext-docker:devel
 docker pull xebxeb/fasttext-docker:binary
 ```
@@ -57,7 +67,7 @@ Progress: 50.2%  words/sec/thread: 1833592  lr: 0.049821  loss: 0.141374  eta: 0
 ```
 You get the idea... it's a full interactive shell with a mounted volume.
 
-*NOTE* be sure to use absolute paths in your local mount arguments!  And if you are on macOS, be sure that your path is within /Users/ -- otherwise you will map to a path on your Docker Machine VM. See [classification-example.sh](examples/classification-example.sh) for an example.
+**NOTE** be sure to use absolute paths in your local mount arguments!  And if you are on macOS, be sure that your path is within /Users/ -- otherwise you will map to a path on your Docker Machine VM. See [classification-example.sh](examples/classification-example.sh) for an example.
 
 # Binary Container
 ## Building Binary
@@ -75,4 +85,4 @@ You will likely want to mount a volume with Docker in order to use the binary co
 docker run --rm -v /var/path/to/data:/data -v /var/path/to/results:/results test "/result/dbpedia.bin" "/data/dbpedia.test"
 docker run --rm -v /var/path/to/data:/data -v /var/path/to/results:/results predict "/result/dbpedia.bin" "/data/dbpedia.test" > "data/dbpedia.test.predict"
 ```
-See [classification-example.sh](examples/classification-example.sh) for a full example.
+See [classification-example.sh](examples/classification-example.sh) for an example using the **devel** tag.  Simply replace that with **binary** and remove the _./fastText_ argument to achieve the same result.
