@@ -5,6 +5,7 @@ RUN apt-get update && apt-get install -y \
         wget \
         git \
         python-dev \
+        unzip \
         python-numpy \
         python-scipy \
         && rm -rf /var/cache/apk/*

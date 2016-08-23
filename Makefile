@@ -22,6 +22,11 @@ binary: build
 # Other make options below
 # -----
 
+test:
+	docker run --rm -it $(DOCKER_IMAGE_PREFIX):devel ./word-vector-example.sh
+	docker run --rm -it $(DOCKER_IMAGE_PREFIX):devel ./classification-example.sh
+	docker run --rm -it $(DOCKER_IMAGE_PREFIX):devel ./classification-results.sh
+
 run:
 	docker run --rm -it $(DOCKER_IMAGE_PREFIX):devel /bin/bash
 
