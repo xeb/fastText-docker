@@ -1,4 +1,4 @@
-# fastText Docker [![Build Status](https://travis-ci.org/xeb/fastText-docker.svg?branch=master)](https://travis-ci.org/xeb/fastText-docker)
+# fastText Docker [![Build Status](https://travis-ci.org/xeb/fastText-docker.svg?branch=master)](https://travis-ci.org/xeb/fastText-docker) [![Container Status](https://images.microbadger.com/badges/image/xebxeb/fasttext-docker.svg)](https://microbadger.com/images/xebxeb/fasttext-docker "Get your own image badge on microbadger.com")
 Dockerfile and example for Facebook Research's [fastText](https://github.com/facebookresearch/fastText).
 
 # Getting Started
@@ -19,7 +19,7 @@ There are two Dockerfiles, including:
 # Pulling Prebuilt Images
 If you'd like to use the published prebuilt images, you can pull them from DockerHub.  *NOTE*: the _latest_ will always be the *devel* tag.
 ```
-docker pull xebxeb/fasttext-docker# <-- latest is devel
+docker pull xebxeb/fasttext-docker
 docker pull xebxeb/fasttext-docker:devel
 docker pull xebxeb/fasttext-docker:binary
 ```

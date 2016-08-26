@@ -3,19 +3,20 @@
 all: clean build binary
 
 DOCKER_IMAGE_PREFIX=xebxeb/fasttext-docker# must be lower case
+DOCKER_BUILD_CMD=docker build
 
 clean:
 	rm -rf examples/data
 	rm -rf examples/result
 
 build:
-	docker build -t $(DOCKER_IMAGE_PREFIX):devel -f Dockerfile .
-	docker build -t $(DOCKER_IMAGE_PREFIX):latest -f Dockerfile .
+	$(DOCKER_BUILD_CMD) -t $(DOCKER_IMAGE_PREFIX):devel -f Dockerfile .
+	$(DOCKER_BUILD_CMD) -t $(DOCKER_IMAGE_PREFIX):latest -f Dockerfile .
 
 binary: build
 	docker run --rm $(DOCKER_IMAGE_PREFIX):devel cat ./fasttext > fasttext.bin
 	chmod +x fasttext.bin
-	docker build -t $(DOCKER_IMAGE_PREFIX):binary -f Dockerfile.binary .
+	$(DOCKER_BUILD_CMD) -t $(DOCKER_IMAGE_PREFIX):binary -f Dockerfile.binary .
 	rm fasttext.bin
 
 # -----
