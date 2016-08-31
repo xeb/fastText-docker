@@ -1,0 +1,29 @@
+{
+  "jpsType": "install",
+  "application": {
+    "name": "fastText",
+    "homepage": "https://research.facebook.com/blog/fasttext/",
+    "description": "fastText is a library designed to help build scalable solutions for text representation and classification, open-sourced by Facebook AI Research (FAIR)",
+    "env": {
+      "topology": {
+        "nodes": [
+          {
+            "cloudlets": 16,
+            "count": 1,
+            "nodeGroup": "cp",
+            "docker": {
+              "image": "xebxeb/fasttext-docker",
+              "env": {},
+              "volumes": [
+                "/result",
+                "/data"
+              ],
+              "cmd": "/classification-example.sh"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "success": "Your fastText has been installed successfully. Please check the <a href='https://docs.jelastic.com/view-log-files'>logs</a> or jump to <a href='https://docs.jelastic.com/ssh-access'>SSH Gate</a>"
+}
