@@ -1,6 +1,8 @@
 # fastText Docker [![Build Status](https://travis-ci.org/xeb/fastText-docker.svg?branch=master)](https://travis-ci.org/xeb/fastText-docker) [![Container Status](https://images.microbadger.com/badges/image/xebxeb/fasttext-docker.svg)](https://microbadger.com/images/xebxeb/fasttext-docker "Get your own image badge on microbadger.com")
 Dockerfile and example for Facebook Research's [fastText](https://github.com/facebookresearch/fastText).
 
+[![Deploy](https://raw.githubusercontent.com/sych74/PokemonGo-Map-in-Cloud/master/images/deploy-to-jelastic.png)](https://jelastic.com/install-application/?manifest=https://github.com/siruslan/fastText-docker/raw/master/jelastic.jps)
+
 # Getting Started
 The quickest way to see the fastText classification tutorial with fastText-docker is:
 ```
