@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: fasttext-class
+spec:
+  template:
+    metadata:
+      name: fasttext-class
+    spec:
+      containers:
+      - name: fasttext-class
+        image: xebxeb/fasttext-docker:latest
+        command: ["./classification-example.sh"]
+      restartPolicy: Never

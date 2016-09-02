@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: fasttext
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: fasttext
+    spec:
+      containers:
+      - name: fasttext
+        image: xebxeb/fasttext-docker:latest
+        command: ["/bin/sleep", "100000"]
+        # NOTE: this deployment is meant to be accessed elsewhere
