@@ -4,7 +4,7 @@ Dockerfile and example for Facebook Research's [fastText](https://github.com/fac
 # Quick Deployments
 If you'd like to use a cluster manager to deploy fastText-docker, we have configurations for:
 - [Kubernetes](deployments/kubernetes/)
-- [Jelastic](deployments/jelastic/) [![Deploy](https://raw.githubusercontent.com/sych74/PokemonGo-Map-in-Cloud/master/images/deploy-to-jelastic.png =125x)](https://jelastic.com/install-application/?manifest=https://github.com/xebxeb/fastText-docker/raw/master/deployments/jelastic.jps)
+- [Jelastic](deployments/jelastic/) <a href="https://jelastic.com/install-application/?manifest=https://github.com/xebxeb/fastText-docker/raw/master/deployments/jelastic/jelastic.jps"><img src="https://raw.githubusercontent.com/sych74/PokemonGo-Map-in-Cloud/master/images/deploy-to-jelastic.png" width="125" /></a>
 
 See more in [deployments](deployments/)
 
