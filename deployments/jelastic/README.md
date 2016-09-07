@@ -1,5 +1,15 @@
 # Deploying fastText-docker on Jelastic
 
+### Initiate Deployment
+<a href="https://jelastic.com/install-application/?manifest=https://github.com/xeb/fastText-docker/raw/master/deployments/jelastic/jelastic.jps"><img src="https://raw.githubusercontent.com/sych74/PokemonGo-Map-in-Cloud/master/images/deploy-to-jelastic.png" width="125" /></a>
+
+Press deploy button above. 
+
+### Choose a service provier
+<img src="images/choose-service-provider.png" width="300px">
+
+Press install button. 
+
 ### Signup Verification
 <img src="images/signup-verification.png" width="300px">
 
