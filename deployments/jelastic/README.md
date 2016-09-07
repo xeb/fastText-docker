@@ -6,7 +6,7 @@
 Press deploy button above. 
 
 ### Choose a service provier
-<img src="images/choose-service-provider.png" width="300px">
+<img src="images/choose-service-provider.png" width="500px">
 
 Press install button. 
 
