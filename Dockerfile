@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:xenial
 MAINTAINER Mark Kockerbeck <mark@kockerbeck.com>
 RUN apt-get update && apt-get install -y \
         build-essential \

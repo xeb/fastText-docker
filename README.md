@@ -80,7 +80,7 @@ You get the idea... it's a full interactive shell with a mounted volume.
 ## Building Binary
 If you'd just like a pre-built binary of fastText, you can build the *binary* simply by doing:
 ```
-mark binary
+make binary
 ```
 (and modifying the Makefile to your image name if you'd like)
 
