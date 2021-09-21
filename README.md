@@ -1,4 +1,4 @@
-# fastText Docker [![Build Status](https://travis-ci.org/xeb/fastText-docker.svg?branch=master)](https://travis-ci.org/xeb/fastText-docker) [![Container Status](https://images.microbadger.com/badges/image/xebxeb/fasttext-docker.svg)](https://microbadger.com/images/xebxeb/fasttext-docker "Get your own image badge on microbadger.com")
+# fastText Docker [![Build Status](https://travis-ci.org/xeb/fastText-docker.svg?branch=master)](https://travis-ci.org/xeb/fastText-docker)
 Dockerfile and example for Facebook Research's [fastText](https://github.com/facebookresearch/fastText).
 
 # Quick Deployments
